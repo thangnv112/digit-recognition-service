@@ -1,8 +1,9 @@
-import pytest
-import numpy as np
-import cv2
-import sys
 import os
+import sys
+
+import cv2
+import numpy as np
+import pytest
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 try:

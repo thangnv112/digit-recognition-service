@@ -1,5 +1,6 @@
 import numpy as np
 import onnxruntime as ort
+
 from app.utils.logger import get_logger
 
 logger = get_logger(__name__)

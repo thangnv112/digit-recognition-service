@@ -1,5 +1,6 @@
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+
 class Settings(BaseSettings):
     model_path: str = 'weights/mnist_cnn.onnx'
     log_level: str = 'INFO'

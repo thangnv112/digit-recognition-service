@@ -1,5 +1,7 @@
 import logging
+
 import structlog
+
 
 def setup_logging(log_level: str = 'INFO') -> None:
     logging.basicConfig(level=log_level, format="%(message)s")

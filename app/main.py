@@ -1,17 +1,24 @@
-import time
 import base64
+import time
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, UploadFile, File, HTTPException, Request, Response
-from fastapi.responses import JSONResponse
-from prometheus_client import Counter, Histogram, generate_latest, CONTENT_TYPE_LATEST
-import uvicorn
 
+import uvicorn
+from fastapi import FastAPI, File, HTTPException, Request, Response, UploadFile
+from fastapi.responses import JSONResponse
+from prometheus_client import CONTENT_TYPE_LATEST, Counter, Histogram, generate_latest
+
+from app import __version__
 from app.config import get_settings
-from app.utils.logger import setup_logging, get_logger
-from app.schemas import PredictionResponse, DigitDetail, Base64PredictRequest, ErrorResponse, HealthResponse
+from app.schemas import (
+    Base64PredictRequest,
+    DigitDetail,
+    ErrorResponse,
+    HealthResponse,
+    PredictionResponse,
+)
 from app.services.inference import DigitClassifier
 from app.services.preprocessor import preprocess_image
-from app import __version__
+from app.utils.logger import get_logger, setup_logging
 
 settings = get_settings()
 setup_logging(settings.log_level)

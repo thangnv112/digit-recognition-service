@@ -7,9 +7,10 @@ This script:
 4. Generates an annotated image showing bounding boxes and predictions.
 """
 
+import base64
 import os
 import sys
-import base64
+
 import cv2
 import numpy as np
 from fastapi.testclient import TestClient

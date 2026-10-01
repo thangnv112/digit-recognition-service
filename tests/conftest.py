@@ -1,14 +1,15 @@
+import os
+import sys
+
+import cv2
+import numpy as np
 import pytest
 from fastapi.testclient import TestClient
-import numpy as np
-import cv2
-import sys
-import os
 
 # Ensure the demo project root is on sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from app.main import app  # noqa: E402
+from app.main import app
 
 
 @pytest.fixture

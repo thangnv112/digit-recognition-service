@@ -1,9 +1,11 @@
+import gzip
 import os
+import urllib.request
+
 import numpy as np
 import onnxruntime as ort
-import gzip
-import urllib.request
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+
 
 def download_mnist(url, filename):
     if not os.path.exists(filename):

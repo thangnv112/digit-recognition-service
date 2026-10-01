@@ -1,13 +1,14 @@
 import os
+
 import torch
-import torch.nn as nn
-import torch.optim as optim
-from torchvision import datasets, transforms
+from torch import nn, optim
 from torch.utils.data import DataLoader
+from torchvision import datasets, transforms
+
 
 class MNISTNet(nn.Module):
     def __init__(self):
-        super(MNISTNet, self).__init__()
+        super().__init__()
         self.block1 = nn.Sequential(
             nn.Conv2d(1, 32, kernel_size=3, padding=1),
             nn.BatchNorm2d(32),

@@ -1,6 +1,7 @@
-import pytest
-import os
 import base64
+import os
+
+import pytest
 
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "..", "weights", "mnist_cnn.onnx")
 MODEL_EXISTS = os.path.exists(MODEL_PATH)
