@@ -41,6 +41,12 @@ Input [1, 1, 28, 28]
 Output [1, 10]
 ```
 
+## 📸 Demo Thực Tế (Swagger UI & Kết Quả)
+
+| 1. Upload ảnh qua Swagger UI (`/docs`) | 2. Kết quả nhận diện & Phản hồi JSON |
+|:---:|:---:|
+| ![Swagger Upload](docs/images/swagger_request.png) | ![Swagger Response](docs/images/swagger_response.png) |
+
 ## 🚀 Quick Start
 
 ### 1. Setup môi trường
