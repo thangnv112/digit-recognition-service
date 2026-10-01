@@ -1,0 +1,47 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# === Virtual Environment (rất nặng, ~2GB) ===
+venv/
+.venv/
+
+# === MNIST Dataset Cache (~60MB) ===
+data/
+
+# === Git ===
+.git/
+.gitignore
+
+# === IDE ===
+.idea/
+.vscode/
+
+# === Dev/CI files (không cần trong production image) ===
+scripts/
+tests/
+.github/
+requirements-dev.txt
+.env.example
+PROJECT_PLAN.md
+TEST_AND_DEPLOY_RUNBOOK.md
+README.md
+
+# === Docker files (tránh đệ quy) ===
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+
+# === OS ===
+Thumbs.db
+.DS_Store
+
+# === Logs & Cache ===
+logs/
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
