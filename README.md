@@ -1,4 +1,4 @@
-# 🔢 Handwritten Digit Recognition Microservice
+# 🔢 Handwritten Digit Recognition
 
 > End-to-end pipeline: chụp ảnh chữ số viết tay → nhận diện chuỗi số.
 
